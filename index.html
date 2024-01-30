@@ -203,9 +203,9 @@
 
 			function stats(first = false) {
 				Promise.resolve($.ajax({
-					url: "https://api.kagopow.org/info",
+					url: "http://159.223.80.240:7001/",
 				})).then(function(data) {
-					$("#height .current").attr("href", "https://explorer.kagopow.org/block/" + data["result"]["bestblockhash"])
+					$("#height .current").attr("href", "http://159.223.80.240:7001/block/" + data["result"]["bestblockhash"])
 					$("#height .current").text(data["result"]["blocks"])
 					if (first) {
 						height_start = data["result"]["blocks"]
