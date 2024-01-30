@@ -203,9 +203,9 @@
 
 			function stats(first = false) {
 				Promise.resolve($.ajax({
-					url: "http://159.223.80.240:7001/",
+					url: "http://159.223.80.240:1201/info",
 				})).then(function(data) {
-					$("#height .current").attr("href", "http://159.223.80.240:7001/block/" + data["result"]["bestblockhash"])
+					$("#height .current").attr("href", "http://159.223.80.240:1201/block/" + data["result"]["bestblockhash"])
 					$("#height .current").text(data["result"]["blocks"])
 					if (first) {
 						height_start = data["result"]["blocks"]
