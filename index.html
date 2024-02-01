@@ -134,7 +134,7 @@
 					<h4>
 					</h4>
 					<div id="height" class="d-block mb-2">
-						Current height is <span class="loading">loading...</span> <a href="#" class="current d-none" target="_blank">0</a> (<span class="passed">0</span> blocks since you open this page)
+						Current block height is <span class="passed">0</span> 
 					</div>
 					<div class="links mb-2">
 						<a href="#" target="_blank">DOWNLOAD</a>
@@ -203,17 +203,9 @@
 
 			function stats(first = false) {
 				Promise.resolve($.ajax({
-					url: "http://159.223.80.240:1201/info",
+					url: "https://explorer.kagopow.org/api/getblockcount",
 				})).then(function(data) {
-					$("#height .current").attr("href", "http://159.223.80.240:1201/block/" + data["result"]["bestblockhash"])
-					$("#height .current").text(data["result"]["blocks"])
-					if (first) {
-						height_start = data["result"]["blocks"]
-						$("#height .loading").addClass("d-none")
-						$("#height .current").removeClass("d-none")
-					} else {
-						$("#height .passed").text(data["result"]["blocks"] - height_start)
-					}
+						$("#height .passed").text(data - height_start)
 				})
 			}
 
