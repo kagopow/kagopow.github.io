@@ -50,9 +50,6 @@ Explorer
 - Wallet Extension for Google Chrome: it's coming
 - Wallet Extension for Firefox: it's coming
 
-Exchange
---------
-- 
 
 Community
 ---------
