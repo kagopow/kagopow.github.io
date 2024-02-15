@@ -4,7 +4,7 @@ Atanapi is a decentralized, peer-to-peer (P2P) digital currency and payment netw
 
 Through Atanapi, users can make payments to anyone in the world at the highest speeds in 2 minutes, and the lowest costs compared to other digital assets.
 
-<small>** <a name="bitcointalk">[1]</a>: [Bitcointalk: [ANN] [KAGO] [KAGOPOWCOIN] [POW/POS] [Scrypt] (https://bitcointalk.org/index.php?topic=5483984)
+<small>** <a name="bitcointalk">[1]</a>: [Bitcointalk: [ANN] [KAGO] [KAGOPOWCOIN] [POW/POS] [Scrypt]](https://bitcointalk.org/index.php?topic=5483984)
 </small>
 
 # Coin specifications:
